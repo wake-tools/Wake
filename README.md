@@ -41,9 +41,6 @@ wake > app.jc
 | [Check for file modification] --> (if true) --> Send reload signal ------------|
 ```
 
-### Official Site
-- **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
-
 ---
 ## [|>](https://github.com/wake-tools/Wake-Lang) {Wake-Lang}
 
@@ -124,4 +121,10 @@ wake myapp.jc
 
 # Wake will automatically fetch required packages
 
-
+### Official Site
+- **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
+```
+---
+### Official Site
+- **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
+---
