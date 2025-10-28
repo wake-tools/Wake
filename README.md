@@ -32,6 +32,7 @@ wake > hello.jc
   | wake > hello.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
+        #Jit.add hello
         {wk.module.sys.r}wake-tools/tcc-v0.1w/tcc
             -xc -shared {this.file}
             -o {jit.file}
