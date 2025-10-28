@@ -127,5 +127,5 @@ wake myapp.jc
 ---
 ## > **[wake.tools](https://wake.tools)** 
 >
-> Download the latest build, explore live demos, and follow development updates.
+> Official website, download the latest build, explore live demos, and follow development updates.
 ---
