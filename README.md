@@ -21,7 +21,7 @@ wake > app.jc
 ```csharp
 [Process] Wake (Master Orchestrator - Main Runtime) (creates the console)            
 |      |
-|     [Reads app.jc] (C source code + metadata header)                         <--|
+|     [Reads app.jc] (C source code + metadata header)         <------------------|
 |            |                                                                    |
 |     <:jit:> Wake-Lang metadata <:/jit:> (compile & link instructions)           |
 |            |                                                                    |
