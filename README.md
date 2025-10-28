@@ -38,11 +38,7 @@ wake > app.jc
 |                    |---- (Jitlib -> launch sub-JIT < Wake-Lang >)  -------------|
 |                                                                                 |
 |                                                                                 |
-| [Check for file modification]                                                   |
-|        |                                                                        |
-|      (if true)                                                                  |
-|        |                                                                        |
-|     Send reload signal ---------------------------------------------------------|
+| [Check for file modification] --> (if true) --> Send reload signal -------------|
 ```
 
 ### Official Site
