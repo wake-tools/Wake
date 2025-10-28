@@ -86,11 +86,10 @@ int main(void) {
 
 ---
 
-### Wake comes in two flavors, depending on how you like to work:
+## Wake comes in two flavors
 
----
 
-## Installer Version — All-in-One Setup
+### Installer Version (All-in-One Setup)
 
 Perfect for a complete offline install.
 Just run the .msi, select your preferred packages, and you’re ready to go.
@@ -99,11 +98,11 @@ Just run the .msi, select your preferred packages, and you’re ready to go.
 - Works entirely offline
 - Instantly runs .jc files from File Explorer
 
-Ideal if you want the full Wake environment, pre-bundled and ready out of the box.
+> Ideal if you want the full Wake environment, pre-bundled and ready out of the box.
 
 ---
 
-## Portable Version — Minimal & Flexible
+### Portable Version (Minimal & Flexible)
 
 A super-light Wake build that you can copy, move, or duplicate anywhere.
 It includes only the essentials, and automatically pulls missing packages when needed.
