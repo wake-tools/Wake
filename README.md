@@ -20,25 +20,25 @@ wake > app.jc
 ```
 ```csharp
 [Process] Wake (Master Orchestrator - Main Runtime) (creates the console)            
-|      |
-|     [Reads app.jc] (C source code + metadata header)         <------------------|
-|            |                                                                    |
-|     <:jit:> Wake-Lang metadata <:/jit:> (compile & link instructions)           |
-|            |                                                                    |
-|     [Process] TCC -xc -shared out.sm                                            |
-|            |                                                                    |
-|     [Process] GDB (Debugger)                                                    |
-|            |                                                                    |
-|         [Process] wake (In-Memory PE Loader)(parsing sections .text, .data ..)  |
-|             |                                                                   |
-|             [Link] link libraries & bound checking                              |
-|             |                                                                   |
-|             [Launch] main                                                       |
-|                    |                                                            |
-|                    |---- (Jitlib -> launch sub-JIT < Wake-Lang >)  -------------|
-|                                                                                 |
-|                                                                                 |
-| [Check for file modification] --> (if true) --> Send reload signal -------------|
+|    |
+|    [Reads app.jc] (C source code + metadata header)         <------------------|
+|    |                                                                           |
+|    <:jit:> Wake-Lang metadata <:/jit:> (compile & link instructions)           |
+|    |                                                                           |
+|    [Process] TCC -xc -shared out.sm                                            |
+|    |                                                                           |
+|    [Process] GDB (Debugger)                                                    |
+|        |                                                                       |
+|        [Process] wake (In-Memory PE Loader)(parsing sections .text, .data ..)  |
+|            |                                                                   |
+|            [Link] link libraries & bound checking                              |
+|            |                                                                   |
+|            [Launch] main                                                       |
+|                |                                                               |
+|                |---- (Jitlib -> launch sub-JIT < Wake-Lang >)  ----------------|
+|                                                                                |
+|                                                                                |
+| [Check for file modification] --> (if true) --> Send reload signal ------------|
 ```
 
 ### Official Site
