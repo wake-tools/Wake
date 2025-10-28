@@ -7,12 +7,12 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 
 ### Key Features
 -  **Live JIT** — live feedback
--  **Integrated Debugger** — in memory debugger
--  **Safe Memory** —  bound checking and runtime safety  
--  **Branchless & Deterministic** — linear, predictable execution flow  
--  **Wake Lang Integration** — lightweight scripting layer for automation and prototyping  
--  **Secure Packages** — signed `.wpkg` modules auto-fetched and verified  
--  **Multi-Platform** — Windows (w32/w64), (macOS soon)  
+-  **Integrated Debugger** — see everything, fix anything
+-  **Safe Memory** —  bound checking and runtime safety
+-  **Branchless & Deterministic** — linear, predictable execution flow
+-  **Wake Lang Integration** — lightweight scripting layer for automation and prototyping
+-  **Flexible Packages** — signed .wpkg modules with strict dependency resolution
+-  **Multi-Platform** — Windows (w32/w64), (macOS soon)
 
 
 ### Official Site
