@@ -19,7 +19,7 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 - **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
 
 ---
-## |> [{Wake-Lang}](https://github.com/wake-tools/Wake-Lang)
+## [|>](https://github.com/wake-tools/Wake-Lang) {Wake-Lang}
 
 
 > ### Quick start (Hello)
@@ -29,7 +29,7 @@ wake > hello.jc
 
 ```c
 /*|------------------------------------------------------------>>
-  | run: wake > hello.jc
+  | wake > hello.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
         {wk.module.sys.r}wake-tools/tcc-v0.1w/tcc
@@ -51,14 +51,14 @@ int main(void) {
 > **Wake up. Build boldly. JIT Awaken.**
 
 ---
-## ⚙️ Setup (Early Access)
+## Setup (Early Access)
 
 ###  Get Started
 
-> ⚠️ **Early Access Required**  
+> **Early Access Required**  
 > Wake is currently in **closed early access**.  
 > To download the runtime, please register first at:  
-> 👉 [wake.tools/register/register.html](https://wake.tools/register/register.html)  
+> [wake.tools/register/register.html](https://wake.tools/register/register.html)  
 >
 
 ---
