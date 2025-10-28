@@ -1,6 +1,6 @@
-# [Wake](https://github.com/wake-tools/Wake) JIT Engine
+# [Wake]([https://github.com/wake-tools/Wake](https://github.com/wake-tools/Wake-Lang)) JIT Engine
 
-> The zero-build, live JIT runtime powering **[Wake Lang](https://github.com/wake-tools/Wake-Lang)**.
+> The live JIT runtime powering **[Wake Lang](https://github.com/wake-tools/Wake-Lang)**.
 
 ### What is Wake?
 Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (.jc)** scripts with zero build time.
