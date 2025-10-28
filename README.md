@@ -14,7 +14,7 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 -  **Flexible Packages** — signed .wpkg modules with strict dependency resolution
 -  **Multi-Platform** — Windows (w32/w64), (macOS soon)
 
-# Typical JIT App Architecture
+## Typical JIT App Architecture
 ```bash
 wake > app.jc
 ```
