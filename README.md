@@ -81,7 +81,7 @@ int main(void) {
 > **Early Access Required**  
 > Wake is currently in **closed early access**.  
 > To download the runtime, please register first at:  
-> [Register](https://wake.tools/register.html)  
+> [Wake.Tools/Register](https://wake.tools/register.html)  
 >
 
 ---
