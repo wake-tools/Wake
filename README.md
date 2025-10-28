@@ -14,6 +14,36 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 -  **Flexible Packages** — signed .wpkg modules with strict dependency resolution
 -  **Multi-Platform** — Windows (w32/w64), (macOS soon)
 
+# Typical JIT App Architecture
+```bash
+wake > app.jc
+```
+```javascript
+[Process] Wake (Master Orchestrator - Main Runtime) (creates the console)            
+|      |
+|     [Reads app.jc] (C source code + metadata header)                         <--|
+|            |                                                                    |
+|     <:jit:> Wake-Lang metadata <:/jit:> (compile & link instructions)           |
+|            |                                                                    |
+|     [Process] TCC -xc -shared out.sm                                            |
+|            |                                                                    |
+|     [Process] GDB (Debugger)                                                    |
+|            |                                                                    |
+|         [Process] wake (In-Memory PE Loader)(parsing sections .text, .data ..)  |
+|             |                                                                   |
+|             [Link] link libraries & bound checking                              |
+|             |                                                                   |
+|             [Launch] main                                                       |
+|                    |                                                            |
+|                    |---- (Jitlib -> launch sub-JIT < Wake-Lang >)  -------------|
+|                                                                                 |
+|                                                                                 |
+| [Check for file modification]                                                   |
+|        |                                                                        |
+|      if true                                                                    |
+|        |                                                                        |
+|     Send reload signal ---------------------------------------------------------|
+```
 
 ### Official Site
 - **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
