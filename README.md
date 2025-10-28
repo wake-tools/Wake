@@ -1,4 +1,4 @@
-# [Wake]([https://github.com/wake-tools/Wake](https://github.com/wake-tools/Wake-Lang)) JIT Engine
+# [Wake](https://github.com/wake-tools/Wake-Lang) JIT Engine
 
 > The live JIT runtime powering **[Wake Lang](https://github.com/wake-tools/Wake-Lang)**.
 
