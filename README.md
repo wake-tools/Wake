@@ -18,7 +18,7 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 ```bash
 wake > app.jc
 ```
-```javascript
+```csharp
 [Process] Wake (Master Orchestrator - Main Runtime) (creates the console)            
 |      |
 |     [Reads app.jc] (C source code + metadata header)                         <--|
@@ -40,7 +40,7 @@ wake > app.jc
 |                                                                                 |
 | [Check for file modification]                                                   |
 |        |                                                                        |
-|      if true                                                                    |
+|      (if true)                                                                  |
 |        |                                                                        |
 |     Send reload signal ---------------------------------------------------------|
 ```
