@@ -6,18 +6,17 @@
 Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (.jc)** scripts with zero build time.
 
 ### Key Features
-- ⚡ **Live JIT** — instant compile & execute (zero build time)  
-- 🧠 **Integrated Debugger** — built-in interactive debugger, no external tools required  
-- 🔒 **Safe Memory** — automatic bound checking and runtime safety  
-- 🧩 **Branchless & Deterministic** — linear, predictable execution flow  
-- 🧰 **Wake Lang Integration** — lightweight scripting layer for automation and prototyping  
-- 📦 **Secure Packages** — signed `.wpkg` modules auto-fetched and verified  
-- 🌍 **Cross-Platform** — Windows (w32/w64) today, Linux/macOS next  
-- 🪄 **Embeddable API** — integrate Wake directly into any language or runtime  
+-  **Live JIT** — live feedback
+-  **Integrated Debugger** — in memory debugger
+-  **Safe Memory** —  bound checking and runtime safety  
+-  **Branchless & Deterministic** — linear, predictable execution flow  
+-  **Wake Lang Integration** — lightweight scripting layer for automation and prototyping  
+-  **Secure Packages** — signed `.wpkg` modules auto-fetched and verified  
+-  **Multi-Platform** — Windows (w32/w64), (macOS soon)  
 
 
 ### Official Site
-- 🌐  **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
+- **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
 
 ---
 ## |> [{Wake-Lang}](https://github.com/wake-tools/Wake-Lang)
@@ -68,20 +67,20 @@ int main(void) {
 
 ---
 
-## 🧩 Installer Version — All-in-One Setup
+## Installer Version — All-in-One Setup
 
 Perfect for a complete offline install.
 Just run the .msi, select your preferred packages, and you’re ready to go.
 
-- ✅ Everything is pre-configured
-- ✅ Works entirely offline
-- ✅ Instantly runs .jc files from File Explorer
+- Everything is pre-configured
+- Works entirely offline
+- Instantly runs .jc files from File Explorer
 
 Ideal if you want the full Wake environment, pre-bundled and ready out of the box.
 
 ---
 
-## 🚀 Portable Version — Minimal & Flexible
+## Portable Version — Minimal & Flexible
 
 A super-light Wake build that you can copy, move, or duplicate anywhere.
 It includes only the essentials, and automatically pulls missing packages when needed.
