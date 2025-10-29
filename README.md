@@ -26,7 +26,7 @@ env/              // Environement Specific Launcher System
 runtime/          // Cache Runtime Binaries (extracted from packages)
 ├──include/         // external library headers
 ├──libs/            // static or dynamic libraries (*.dll, *.def, *.so, *.dylib, ...)
-└──modules/         // backend-end tools (TCC, sokol-shdc, ...)
+└──modules/         // backend tools (TCC, sokol-shdc, ...)
 
 package/          // list of pre-loaded or fetched packages which are compressed & encrypted (*.wpkg)
 
