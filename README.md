@@ -3,7 +3,7 @@
 > The live JIT runtime powering **[Wake Lang](https://github.com/wake-tools/Wake-Lang)**.
 
 ### What is Wake?
-Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (.jc)** scripts with zero build time.
+Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang** scripts 
 
 ### Key Features
 -  **Live JIT** — live feedback
