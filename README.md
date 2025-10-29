@@ -19,14 +19,20 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 cd wake
 ```
 ```c
-env/              // specific entry launcher system
-├──wake-w32-d     // use system windows 32bit in debug type mode
-└──wake-w64-r     // use system windows 64bit in release type mode
-package/
-runtime/
-wake.exe          // default system (selected from entry launcher in env/)
-wk-w32.dll        // wake runtime 32 bit
-wk-w64.dll        // wake runtime 64 bit
+env/              // Environement Specific Launcher System
+├──wake-w32-d       // use system windows 32-bit in debug type mode
+└──wake-w64-r       // use system windows 64-bit in release type mode
+
+runtime/          // Cache Runtime Binaries
+├──include/         // headers for the runtime core
+├──libs/            // static or dynamic libraries (*.dll, *.def, *.so, *.dylib)
+└──modules/         // optional runtime extensions
+
+package/          // list of pre-loaded or fetched packages which are compressed & encrypted (*.wpkg)
+
+wake              // Default System (one of the launcher from env/)
+wk-w32              // wake runtime 32-bit
+wk-w64              // wake runtime 64-bit
 ```
 > `runtime` folder can be rebuilt at anytime from the packages
 ---
