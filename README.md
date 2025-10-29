@@ -42,7 +42,7 @@ wk-w64              // wake runtime 64-bit
 wake > app.jc
 ```
 ```csharp
-[Process] Wake [Master Orchestrator & Main Runtime] (creates the console)            
+[Process] Wake > app.jc [Master Orchestrator & Main Runtime] (creates the console)            
 |    |
 |    [Parse app.jc] (C source code + metadata header)         <------------------|
 |    |                                                                           |
@@ -52,7 +52,7 @@ wake > app.jc
 |    |                                                                           |
 |    [Process] GDB (Debugger)                                                    |
 |        |                                                                       |
-|        [Process] Wake [Recursive Instance] (out.sm -> In-Memory PE Loader)     |
+|        [Process] Wake > out.sm [Recursive Instance] ( In-Memory PE Loader)     |
 |            |                                                                   |
 |            [Link] link libraries & bound checking (PE link functions )         |
 |            |                                                                   |
@@ -61,7 +61,7 @@ wake > app.jc
 |                |--> (In code Jitlib -> launch sub-JIT < Wake-Lang >)  ---------|
 |                                                                                |
 |                                                                                |
-| [Check for file modification] --> (if true) --> Send reload signal ------------|
+|--> [Check for file modification] --> (if true) --> Send reload signal ---------|
 ```
 
 ---
