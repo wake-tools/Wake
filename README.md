@@ -30,7 +30,7 @@ runtime/          // Cache Runtime Binaries (extracted from packages)
 
 package/          // list of pre-loaded or fetched packages which are compressed & encrypted (*.wpkg)
 
-wake              // Default System (one of the launcher from env/)
+wake              // default system launcher (one of those from env/)
 wk-w32              // wake runtime 32-bit
 wk-w64              // wake runtime 64-bit
 ```
