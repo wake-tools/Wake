@@ -52,9 +52,9 @@ wake > app.jc
 |    |                                                                           |
 |    [Process] GDB (Debugger)                                                    |
 |        |                                                                       |
-|        [Process] Wake > out.sm [Recursive Instance] ( In-Memory PE Loader)     |
+|        [Process] Wake > out.sm [Recursive Instance] (In-Memory PE Loader)      |
 |            |                                                                   |
-|            [Link] link libraries & bound checking (PE link functions )         |
+|            [Link] link libraries & bound checking (PE link functions)          |
 |            |                                                                   |
 |            [Launch] main                                                       |
 |                |                                                               |
