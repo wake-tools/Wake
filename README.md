@@ -14,7 +14,24 @@ Wake is a small, embeddable JIT runtime that executes C99 code and **Wake Lang (
 -  **Flexible Packages** — signed .wpkg modules with strict dependency resolution
 -  **Multi-Platform** — Windows (w32/w64), (macOS soon)
 
-## Typical JIT App Architecture
+## Typical Wake Structure
+```bash
+cd wake
+```
+```c
+env/              // specific entry launcher system
+├──wake-w32-d     // use system windows 32bit in debug type mode
+└──wake-w64-r     // use system windows 64bit in release type mode
+package/
+runtime/
+wake.exe          // default system (selected from entry launcher in env/)
+wk-w32.dll        // wake runtime 32 bit
+wk-w64.dll        // wake runtime 64 bit
+```
+> `runtime` folder can be rebuilt at anytime from the packages
+---
+
+## Typical JIT Process Runtime
 ```bash
 wake > app.jc
 ```
@@ -119,9 +136,6 @@ wake --install
 wake myapp.jc
 
 # Wake will automatically fetch required packages
-
-### Official Site
-- **[wake.tools](https://wake.tools)** — download the latest build, explore live demos, and follow development updates.
 ```
 ---
 ## > **[wake.tools](https://wake.tools)** 
