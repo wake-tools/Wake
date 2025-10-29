@@ -24,9 +24,9 @@ env/              // Environement Specific Launcher System
 └──wake-w64-r       // use system windows 64-bit in release type mode
 
 runtime/          // Cache Runtime Binaries
-├──include/         // headers for the runtime core
-├──libs/            // static or dynamic libraries (*.dll, *.def, *.so, *.dylib)
-└──modules/         // optional runtime extensions
+├──include/         // headers used by the JIT
+├──libs/            // static or dynamic libraries (*.dll, *.def, *.so, *.dylib, ...)
+└──modules/         // backend-end tools (TCC, sokol-shdc, ...)
 
 package/          // list of pre-loaded or fetched packages which are compressed & encrypted (*.wpkg)
 
