@@ -42,7 +42,7 @@ wk-w64              // wake runtime 64-bit
 wake > app.jc
 ```
 ```csharp
-[Process] Wake (Master Orchestrator - Main Runtime) (creates the console)            
+[Process] Wake [Master Orchestrator & Main Runtime] (creates the console)            
 |    |
 |    [Reads app.jc] (C source code + metadata header)         <------------------|
 |    |                                                                           |
@@ -52,7 +52,7 @@ wake > app.jc
 |    |                                                                           |
 |    [Process] GDB (Debugger)                                                    |
 |        |                                                                       |
-|        [Process] wake (In-Memory PE Loader)(parsing sections .text, .data ..)  |
+|        [Process] Wake (recursive) (In-Memory PE Loader)                        |
 |            |                                                                   |
 |            [Link] link libraries & bound checking                              |
 |            |                                                                   |
