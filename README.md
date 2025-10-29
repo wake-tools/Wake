@@ -44,21 +44,21 @@ wake > app.jc
 ```csharp
 [Process] Wake [Master Orchestrator & Main Runtime] (creates the console)            
 |    |
-|    [Reads app.jc] (C source code + metadata header)         <------------------|
+|    [Parse app.jc] (C source code + metadata header)         <------------------|
 |    |                                                                           |
-|    <:jit:> Wake-Lang metadata <:/jit:> (compile & link instructions)           |
+|    [Parse metadata] <:jit:> Wake-Lang metadata <:/jit:> (build instructions)   |
 |    |                                                                           |
-|    [Process] TCC -xc -shared out.sm                                            |
+|    [Process] TCC (Compiler) -xc shared app.jc -o out.sm                        |
 |    |                                                                           |
 |    [Process] GDB (Debugger)                                                    |
 |        |                                                                       |
-|        [Process] Wake (recursive) (In-Memory PE Loader)                        |
+|        [Process] Wake [Recursive Instance] (out.sm -> In-Memory PE Loader)     |
 |            |                                                                   |
-|            [Link] link libraries & bound checking                              |
+|            [Link] link libraries & bound checking (PE link functions )         |
 |            |                                                                   |
 |            [Launch] main                                                       |
 |                |                                                               |
-|                |---- (Jitlib -> launch sub-JIT < Wake-Lang >)  ----------------|
+|                |--> (In code Jitlib -> launch sub-JIT < Wake-Lang >)  ---------|
 |                                                                                |
 |                                                                                |
 | [Check for file modification] --> (if true) --> Send reload signal ------------|
