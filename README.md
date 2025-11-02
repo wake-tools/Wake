@@ -118,7 +118,6 @@ Perfect for a complete offline install.
 Just run the .msi, select your preferred packages, and you’re ready to go.
 
 - Everything is pre-configured
-- Works entirely offline
 - Instantly runs .jc files from File Explorer
 
 > Ideal if you want the full Wake environment, pre-bundled and ready out of the box.
@@ -144,7 +143,27 @@ wake myapp.jc
 # Wake will automatically fetch required packages
 ```
 ---
-## > **[wake.tools](https://wake.tools)** 
+## goto > **[samples](https://github.com/wake-tools/Wake-Samples)**
+
+A small set of **JIT C (.jc)** examples that run instantly with Wake: edit, save, it reloads.  
+No build system. No project setup. Just code → run.
+
+**What you’ll see**
+- Graphics with Sokol and Dear ImGui (pure C bindings)
+- Live reload while editing
+- Runtime safety with bound checking
+- A minimal, portable structure per sample
+
+**Run**
+```bash
+# from a sample folder
+wake clear-sapp.jc
+wake cube-sapp.jc
+wake imgui-sapp.jc
+wake triangle-sapp.jc
+```
+---
+## goto > **[wake.tools](https://wake.tools)** 
 >
 > Official website, download the latest build, explore live demos, and follow development updates.
 ---
