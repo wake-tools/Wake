@@ -57,7 +57,7 @@ wake > app.jc
 |            |                                                                   |
 |            [Launch] main                                                       |
 |                |                                                               |
-|                |--> (In code Jitlib -> launch sub-JIT < Wake-Lang >)  ---------|
+|                |---> In-code jitlib: launch Wake-Lang sub-JIT -- (recursive) --|
 |                                                                                |
 |                                                                                |
 |--> [Check for file modification] --> (if true) --> Send reload signal ---------|
