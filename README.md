@@ -43,7 +43,7 @@ wake > app.jc
 ```csharp
 [Process] Wake > app.jc [Master Orchestrator & Main Runtime] (creates the console)            
 |    |
-|    [Parse app.jc] (C source code + metadata header)         <------------------|
+|    [Parse app.jc] (C source code + metadata header)         <-----------------<|
 |    |                                                                           |
 |    [Parse metadata] <:jit:> Wake-Lang metadata <:/jit:> (build instructions)   |
 |    |                                                                           |
@@ -57,10 +57,10 @@ wake > app.jc
 |            |                                                                   |
 |            [Launch] main                                                       |
 |                |                                                               |
-|                |--> In-code jitlib: launch Wake-Lang sub-JIT --> (recursive) --|
+|                |--> In-code jitlib: launch Wake-Lang sub-JIT -- (recursive) -->|
 |                                                                                |
 |                                                                                |
-|--> [Check for file modification] --> (if true) --> Send reload signal ---------|
+|--> [Check for file modification] --> (if true) --> Send reload signal -------->|
 ```
 
 ---
