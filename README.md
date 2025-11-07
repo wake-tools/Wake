@@ -38,7 +38,7 @@ wk-w64              // wake runtime 64-bit
 
 ## Typical JIT Process Runtime
 ```bash
-wake > app.jc
+wake app.jc
 ```
 ```csharp
 [Process] Wake > app.jc [Master Orchestrator & Main Runtime] (creates the console)            
