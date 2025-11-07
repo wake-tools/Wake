@@ -69,12 +69,12 @@ wake > app.jc
 
 > ### Quick start (Hello)
 ```bash
-wake > hello.jc
+wake hello.jc
 ```
 
 ```c
 /*|------------------------------------------------------------>>
-  | wake > hello.jc
+  | wake hello.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
         {wk.module.sys.r}wake-tools/tcc-v0.1w/tcc
