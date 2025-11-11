@@ -94,71 +94,18 @@ int main(void) {
 > **Wake up. Build boldly. JIT Awaken.**
 
 ---
-## Setup (Early Access)
+##  Get Started
 
-###  Get Started
-
-> **Early Access Required**  
-> Wake is currently in **closed early access**.  
-> To download the runtime, please register first at:  
-> [Wake.Tools/Register](https://wake.tools/register.html)  
->
-
----
-
-## Wake comes in two flavors
-
-
-### Installer Version (All-in-One Setup)
-
-Perfect for a complete offline install.
-Just run the .msi, select your preferred packages, and you’re ready to go.
-
-- Everything is pre-configured
-- Instantly runs .jc files from File Explorer
-
-> Ideal if you want the full Wake environment, pre-bundled and ready out of the box.
-
----
-
-### Portable Version (Minimal & Flexible)
-
-A super-light Wake build that you can copy, move, or duplicate anywhere.
-It includes only the essentials, and automatically pulls missing packages when needed.
-
-
-```bash
-# Go to your Wake directory
-cd wake
-
-# Register file associations and add Wake to PATH
-wake --install
-
-# JIT your first program
-wake myapp.jc
-
-# Wake will automatically fetch required packages
-```
----
 ## goto > **[samples](https://github.com/wake-tools/Wake-Samples)**
 
 A small set of **JIT C (.jc)** examples that run instantly with Wake: edit, save, it reloads.  
-No build system. No project setup. Just code → run.
+> No build system. No project setup. Just code → run.
 
 **What you’ll see**
 - Graphics with Sokol and Dear ImGui (pure C bindings)
 - Live reload while editing
 - Runtime safety with bound checking
 - A minimal, portable structure per sample
-
-**Run**
-```bash
-# from a sample folder
-wake clear-sapp.jc
-wake cube-sapp.jc
-wake imgui-sapp.jc
-wake triangle-sapp.jc
-```
 ---
 ## goto > **[wake.tools](https://wake.tools)** 
 >
